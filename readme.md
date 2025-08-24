@@ -6,7 +6,6 @@
 
 A powerful, interactive desktop application for building, visualizing, and analyzing decision tree models with a focus on credit risk assessment and binary classification tasks.
 
-![Application Screenshot](images/app_screenshot.png)
 
 ## 🌟 Features
 
@@ -101,23 +100,29 @@ python main.py
    - Click **🌳 Create Model** to add a decision tree node
    - The system automatically connects Dataset → Decision Tree
 
-4. **Configure Your Model**
-   - **Double-click** the green Decision Tree node
-   - Select your **target variable** from the dropdown
-   - Click **Configure Model Parameters** for advanced settings
-   - Click **OK** to proceed
-
-5. **Execute the Workflow**
+4. **Execute the Workflow First**
    - Click **▶️ Execute Workflow** button (or press F5)  
-   - The system builds your decision tree automatically
-   - View results in the model tabs that appear
+   - This prepares the data flow and makes nodes ready for configuration
+   - Wait for workflow processing to complete
 
-6. **Analyze Performance**
+5. **Configure Your Model**
+   - **Right-click** the Decision Tree node (don't double-click yet!)
+   - Select **"Configure"** from the context menu
+   - Set **Title** and select your **target variable** from dropdown
+   - Click **"Configure Model Parameters"** for advanced settings (splitting criteria, pruning, etc.)
+   - Click **"Start Manual Tree Building"** to enable interactive control
+
+6. **Build Your Tree Interactively**
+   - **Double-click** the Decision Tree node to open the tree visualization window
+   - **Right-click** on tree nodes → **"Find Optimal Split"** → Apply splits
+   - Continue building your tree by selecting optimal splits
+
+7. **Analyze Performance**
    - Add **📊 Evaluation** node and connect it to your model
    - Execute workflow again to see performance metrics
-   - View accuracy, precision, recall, F1 score, and more
+   - Double-click Evaluation node to view accuracy, precision, recall, F1 score, and more
 
-7. **Export Your Model**
+8. **Export Your Model**
    - **File → Export Model → Export to Python** - Generate Python code
    - **File → Export Model → Export to PMML** - Industry-standard format
    - Models can be deployed in production systems
@@ -200,8 +205,6 @@ bespoke-decision-tree-utility/
 - **[🪟 Windows Setup](SETUP_WINDOWS.md)** - Corporate Anaconda environment setup
 - **[🐧 Ubuntu Setup](SETUP_UBUNTU.md)** - Linux installation and configuration  
 - **[🤝 Contributing Guide](CONTRIBUTING.md)** - How to contribute to the project
-- **[📋 Function Documentation](function_documentation.md)** - Technical API reference
-- **[📋 Workflow Manual](Workflow_System_User_Manual.md)** - Advanced workflow features
 
 ## 🤝 Contributing
 
