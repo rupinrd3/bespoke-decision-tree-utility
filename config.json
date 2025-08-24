@@ -1,0 +1,120 @@
+{
+    "application": {
+        "name": "Bespoke Decision Tree Utility",
+        "version": "0.50",
+        "portable_mode": true,
+        "temp_dir": "temp",
+        "log_dir": "logs",
+        "data_dir": "data"
+    },
+    "memory": {
+        "max_display_rows": 1000,
+        "max_display_cols": 100,
+        "gc_threshold": 1000,
+        "low_memory_mode": false,
+        "memory_warning_threshold": 80.0,
+        "chunk_size": 10000
+    },
+    "ui": {
+        "theme": "light",
+        "window_width": 2560,
+        "window_height": 1355,
+        "font_size": 10,
+        "show_toolbar": true,
+        "show_statusbar": true,
+        "auto_save": true,
+        "confirmation_dialogs": true,
+        "decimal_places": 4,
+        "tree_visualization": {
+            "node_size": 100,
+            "level_distance": 150,
+            "sibling_distance": 50,
+            "orientation": "top_down",
+            "show_node_ids": false,
+            "show_samples": true,
+            "show_percentages": true,
+            "show_importance": true
+        }
+    },
+    "data_loader": {
+        "default_encoding": "utf-8",
+        "default_delimiter": ",",
+        "chunk_size": 50000,
+        "max_rows_preview": 1000,
+        "detect_encoding": true,
+        "detect_delimiter": true,
+        "max_file_size_mb": 4096,
+        "sample_size": 10000,
+        "use_parallel_processing": true,
+        "memory_threshold_gb": 8.0,
+        "max_parallel_columns": 100
+    },
+    "missing_values": {
+        "strategy": "impute",
+        "impute_method": "mean",
+        "fill_value": 0,
+        "threshold": 0.5
+    },
+    "decision_tree": {
+        "criterion": "entropy",
+        "max_depth": 10,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "min_impurity_decrease": 0.0,
+        "max_features": null,
+        "max_leaf_nodes": null,
+        "growth_mode": "automatic",
+        "class_weight": null,
+        "random_state": 42,
+        "pruning_enabled": true,
+        "pruning_method": "cost_complexity",
+        "pruning_alpha": 0.01,
+        "split_finding": {
+            "max_features_to_evaluate": 30,
+            "use_threading": true,
+            "max_threads": 4,
+            "max_splits_returned": 50
+        }
+    },
+    "metrics": {
+        "cross_validation": {
+            "enabled": true,
+            "n_folds": 5,
+            "stratified": true
+        },
+        "primary_metrics": [
+            "accuracy",
+            "precision",
+            "recall",
+            "f1_score",
+            "roc_auc"
+        ],
+        "threshold": 0.5,
+        "positive_class": null
+    },
+    "export": {
+        "default_format": "pmml",
+        "include_metadata": true,
+        "add_comments": true,
+        "include_data_summary": true
+    },
+    "node_report": {
+        "default_export_path": "./exports/node_reports/",
+        "max_nodes_display": 1000,
+        "enable_progress_dialog": true,
+        "decimal_places": 2,
+        "export_formats": ["excel", "csv", "json"],
+        "excel_formatting": true,
+        "thousand_separators": true,
+        "enable_sorting": true,
+        "enable_copy_clipboard": true,
+        "export_timeout_seconds": 300,
+        "validation": {
+            "check_feature_mismatch": true,
+            "check_empty_nodes": true,
+            "check_single_class_target": true,
+            "warn_unbalanced_target": true,
+            "min_class_proportion_warning": 0.01
+        }
+    }
+}
