@@ -220,7 +220,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **🐛 Report Issues**: [GitHub Issues](https://github.com/rupinrd3/bespoke-decision-tree-utility/issues)
 - **💬 Discussions**: [GitHub Discussions](https://github.com/rupinrd3/bespoke-decision-tree-utility/discussions) 
-- **📧 Email**: For complex issues or commercial support
+
 
 ## 🏷️ Version History
 
