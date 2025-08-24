@@ -6,8 +6,6 @@
 
 A powerful, interactive desktop application for building, visualizing, and analyzing decision tree models with a focus on credit risk assessment and binary classification tasks.
 
-![Application Screenshot](images/app_screenshot.png)
-
 ## 🌟 Features
 
 - **🎯 Interactive Tree Building**: Visual drag-and-drop interface for creating decision trees
