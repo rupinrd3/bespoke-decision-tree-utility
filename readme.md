@@ -37,8 +37,8 @@ A powerful, interactive desktop application for building, visualizing, and analy
 - **Windows**: Windows 10/11 (64-bit) with Anaconda (typical in corporate environments)
 - **Ubuntu**: Ubuntu 18.04+ or any recent Linux distribution  
 - **Python**: 3.12+ (required for optimal performance)
-- **RAM**: 4GB minimum (8GB recommended for large datasets)
-- **Storage**: 2GB free space
+- **RAM**: 16GB minimum (32GB recommended for large datasets)
+- **Storage**: 5 GB free space
 
 ### Platform-Specific Setup
 
@@ -183,15 +183,15 @@ bespoke-decision-tree-utility/
 
 ### Minimum Requirements
 - **OS**: Windows 10 (64-bit) or Ubuntu 18.04+
-- **RAM**: 4GB
-- **CPU**: Dual-core processor
-- **Storage**: 1GB free space
+- **RAM**: 16 GB
+- **CPU**: Quad-core processor
+- **Storage**: 5 GB free space
 - **Display**: 1024x768 resolution
 
 ### Recommended Requirements  
-- **RAM**: 8GB or higher
-- **CPU**: Quad-core processor
-- **Storage**: 2GB free space
+- **RAM**: 32 GB or higher
+- **CPU**: eight core processor
+- **Storage**: 5 GB free space
 - **Display**: 1920x1080 resolution
 
 ## 📚 Documentation
